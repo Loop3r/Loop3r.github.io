@@ -30,8 +30,7 @@ tags: OpenWrt
 1. 使用chmod命令将脚本变为可执行脚本：*chmod +x xxx*
 2. 使用*xxx enable*使得脚本开机自启动。该命令实质上是为脚本文件创建一个软链接，软链接存放于/etc/rc.d/下，如果我们不想使用rc.common的enable命令也可以，我们可以自己创建链接。
 3. 通过以上的步骤就可以创建程序自启动脚本，将程序设置为自启动。
-
-3. 另外，如果在开机boot期间，需要运行程序，我们可以使用boot方法。使用方法类似于start方法和stop方法。
+4. 另外，如果在开机boot期间，需要运行程序，我们可以使用boot方法。使用方法类似于start方法和stop方法。
 
 
 [参考openwrt官方文档](http://wiki.openwrt.org/doc/techref/initscripts)
