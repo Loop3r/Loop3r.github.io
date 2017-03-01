@@ -2,7 +2,7 @@
 layout: post
 title: "使用rawsock构造IPv6首部"
 date: 2016-12-09 
-tags: Linux编程  
+tags: Linux编程
 ---
 
 ### 发送端（定制ipv6首部）
@@ -399,7 +399,8 @@ tags: Linux编程
         }  
         return 0;  
     }
-***
+
+
 [参考资料0](http://stackoverflow.com/questions/31419727/how-to-send-modified-ipv6-packet-through-raw-socket)
 
 [参考资料1](http://www.cnblogs.com/yuuyuu/p/5169931.html)
