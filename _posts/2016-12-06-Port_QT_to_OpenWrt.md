@@ -2,10 +2,10 @@
 layout: post
 title: "移植QT到OpenWrt"
 date: 2016-12-06 
-tags: OpenWrt  
+tags: OpenWrt
 ---
 
-#### 编译tslib
+## 编译tslib
 修改Makefile：CC=.../mipsel-linux-gcc；CXX=.../mipsel-linux-g++
     
     ./autogen.sh
@@ -16,7 +16,7 @@ make时出现错误：
     error: call to ‘__open_missing_mode’ declared with attribute error: open with O_CREAT in second argument needs 3 arguments
 错误原因及解决办法：gcc语法检查严格，必须加上第三个参数 --0777
 
-#### 编译qt
+## 编译qt
 从qt官网下载qt-everywhere-opensource-src-4.8.1.tar.gz并解压。
 
 修改/mkspecs/qws/linux-mips-g++/qmake.conf如下
