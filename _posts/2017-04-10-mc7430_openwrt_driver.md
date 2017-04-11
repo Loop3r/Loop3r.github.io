@@ -30,9 +30,6 @@ Kernel Modules -> USB Support
 ```
 将`GobiNet`和`GobiSerial`的源文件分别添加到相应的`src/`文件夹。
 4. makefile内容分别如下：
-
----
-
 GobiNet/makefile
 ```
 #
@@ -82,8 +79,6 @@ endef
 
 $(eval $(call KernelPackage,GobiNet))
 ```
----
-
 GobiSerial/makefile
 ```
 #
